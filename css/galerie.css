@@ -1,0 +1,58 @@
+@import "nav.css";
+@import "footer.css";
+
+/* <-------------------------------------- GENERAL --------------------------------------> */
+
+html,body{
+    height: 100%;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/* <-------------------------------------- FIRSTPART --------------------------------------> */
+
+.main{
+    height: 60vh;
+    width: 100%;
+    background-image: url('../img/galeriepoza.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: bottom;
+}
+
+.titluwrap h1{
+    padding-top: 20vh;
+    color: white;
+    text-align: center;
+    font-size: 80px;
+    align-items: center;
+    font-family: 'Parisienne', cursive;
+}
+
+.gallery{
+    height: auto;
+    width: 100%;
+    background-color: #ebedf0;
+}
+
+
+.gallery img{
+	transition: 1s;
+	padding: 15px;
+	width: 200px;
+}
+
+.gallery img:hover{
+	transform: scale(1.2);
+}
+
+.gallery a:hover{
+    cursor: zoom-in;
+}
+
+/* <-------------------------------------- RESPONSIVE --------------------------------------> */

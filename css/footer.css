@@ -1,0 +1,209 @@
+/*-------------------------------------- FOOTER --------------------------------------*/
+
+.footer{
+    height: 40vh;
+    width: 100%;
+    background-color: #202020;
+    overflow: hidden;
+}
+
+.footer1 img{
+    height: 25vh;
+    width: 100%;
+}
+
+.footer1, .footer2, .footer5{
+    height: 40vh;
+    width: 20%;
+    float: left;
+}
+
+.footer h5{
+    margin-top: 40px;
+    font-size: 20px;
+    color: #c69963;
+}
+
+.footer h5 a{
+    color: #c69963;
+}
+
+.footer a{
+    text-decoration: none;
+    color: #f5f3f0;
+}
+
+.footer p{
+    margin-top: 20px;
+    color: #f5f3f0;
+}
+
+.design{
+    padding-top: 10px;
+    background-color: black;
+    height:10vh;
+    width: 100%;
+    overflow-x: hidden;
+    position: relative;
+    text-align: center;
+}
+
+.design h3{
+    color: white;
+    font-size: 17px;
+}
+
+.design h2{
+    color: white;
+    font-size: 20px;
+}
+
+.design a{
+    text-decoration: underline;
+    color: white;
+    transition: 0.7s;
+}
+
+.design a:hover{
+    color:#f7b64f;
+}
+
+.fb-page{
+    width: 100%;
+    height: 25vh;
+}
+
+.footer3{
+    width: 15%;
+    float: left;
+}
+
+.footer4{
+    width: 25%;
+    float: left;
+}
+
+/* <-------------------------------------- RESPONSIVE --------------------------------------> */
+
+@media screen and (max-width: 1400px){
+    .footer5 img{
+        margin-left: 20px;
+    }
+}
+
+@media screen and (max-width: 1300px){
+    .footer5 img{
+        margin-left: 30px;
+    }
+}
+
+@media screen and (max-width: 1400px){
+    .footer5 img{
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 1150px){
+    .fb-page{
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 1100px){
+    .footer5 img{
+        width: 60%;
+    }
+    .footer2 p{
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 1000px){
+    .footer2 p{
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 900px){
+    .footer h5{
+        font-size: 16px;
+    }
+    .fb-page {
+        height: 15vh;
+    }
+}
+
+@media screen and (max-width: 850px){
+    .footer2 p{
+        font-size: 10px;   
+    }
+    .footer1 img{
+        height: 20vh;
+    }
+}
+
+@media screen and (max-width: 650px){
+    .footer1,.footer2,.footer3,.footer4,.footer5{
+        width: 100%;
+        height: 20vh;
+        margin-left: 20px;
+    }
+    .footer{
+        height: 110vh;
+    }
+
+    .fb-page{
+        height: 15vh;
+    }
+
+    .footer5{
+        padding-top: 5vh;
+    }
+
+    .footer5 img{
+        height: 10vh;
+        width: 30%;
+    }
+    .design{
+        padding: 25px;
+    }
+    .footer2 p{
+        font-size: 15px;   
+    }
+}
+
+@media screen and (max-width: 480px){
+    .footer2 p{
+        font-size: 15px;   
+    }
+    .footer1 img{
+        height: 20vh;
+    }
+    .design {
+        height: 15vh;
+    }
+}
+
+@media screen and (max-width: 400px){
+    .design h3{
+        font-size: 13px;
+    }
+    .design h2{
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 350px){
+    .fb-page{
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 250px){
+    .fb-page{
+        width: 50%;
+    }
+    .footer5{
+        margin-top: 5vh;
+    }
+}

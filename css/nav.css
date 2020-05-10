@@ -1,0 +1,233 @@
+/* <-------------------------------------- MENIU --------------------------------------> */
+
+#navbar{
+	height: 12vh;
+	width: 100%;
+	position: fixed;
+	background-color: rgba(0,0,0,0);
+	z-index: 999;
+}
+
+.logo p{
+	display: none;
+}
+
+.liniesus{
+    height: 4vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 14px;
+    background: rgba(247, 183, 79,0.55);
+    border-bottom: 1px solid white;
+}
+
+.liniesus2 li{
+    display: inline;
+    color: #f5f3f0;
+    padding-left: 10px;
+    align-items: center;
+}
+
+.liniesus2 i{
+    font-size: 14px;
+    color: #f5f3f0;
+    padding-left: 40px;
+    align-items: center;
+}
+
+.liniesus ul{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.liniesus1{
+    color: #f5f3f0;
+}
+
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+}
+
+.logo{
+    color: #f5f3f0;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 25px;
+}
+
+.nav-links{
+    display: flex;
+    justify-content: space-around;
+    width: 30%;
+}
+
+.nav-links a{
+    color: #f5f3f0;
+    text-decoration: none;
+    letter-spacing: 2px;
+    font-size: 20px;
+    display: inline-block;
+    transition: 0.7s;
+    position: relative;
+}
+
+.nav-links li{
+    list-style: none;
+}
+
+.burger{
+    display: none;
+    cursor: pointer;
+}
+
+.burger div{
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 5px;
+    transition: all 0.7s ease;
+}
+
+nav a:hover{
+	color:#f7b64f;
+}
+
+.logo a:hover{
+    color:#f7b64f;
+}
+
+.logo a{
+    text-decoration: none;
+    color: #f5f3f0;
+    display: inline-block;
+    transition: 0.7s;
+    position: relative;
+}
+
+nav a:after {    
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 1px;
+    left: 50%;
+    position: absolute;
+    background: #f7b64f;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+    color:#f7b64f;
+}
+  
+nav a:hover:after { 
+    width: 100%; 
+    left: 0; 
+    color:#f7b64f;
+}
+
+/* <-------------------------------------- RESPONSIVE --------------------------------------> */
+
+@media screen and (max-width:1024px){
+    .nav-links{
+        width: 50%;
+    }
+}
+
+
+@media screen and (max-width:768px){
+	
+    .liniesus{
+        display: none;
+    }
+    nav {
+        background-color: black;
+        height: 12vh;
+    }
+    .logo a{
+        display: inline;
+    }
+    .buttons button:hover {
+            border: 2px solid #fff;
+            background-color: transparent;
+            color: #fff;
+            cursor: pointer;
+            padding: 13px 15px;
+            border-radius: 50%;
+            outline: none;
+            z-index: 4;
+    }
+    body{
+        overflow-x: hidden;
+    }
+    .nav-links{
+        position: absolute;
+        right: 0px;
+        min-height: 92vh;
+        top: 8vh;
+        background-color: black;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+        display: none;
+        z-index: 6;
+    }
+    .nav-links li{
+        opacity: 1;
+        color: white;
+    }
+    .burger{
+        display: block;
+    }
+	.logo h4{
+		display: none;
+	}
+	.logo p{
+		display: inline;
+	}
+	
+	.logo p img{
+		height: 8vh;
+	}
+	#navbar{
+        position: fixed;
+        height: 12vh;
+	}
+
+
+.nav-active{
+    transform: translateX(0%);
+    display: flex;}
+
+.toggle .line1{
+    transform: rotate(-45deg) translate(-5px,6px);}
+.toggle .line2{
+    opacity: 0;}
+.toggle .line3{
+    transform: rotate(45deg) translate(-5px,-6px);}
+	
+}
+	
+	
+
+
+/* <-------------------------------------- ANIMATII --------------------------------------> */
+
+@keyframes navLinkFade{
+    from{
+        opacity: 0;
+        transform: translateX(50px);
+    }to{
+        opacity: 1;
+        transform: translateX(0px);
+    }}
+
+

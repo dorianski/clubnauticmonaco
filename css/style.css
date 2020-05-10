@@ -1,0 +1,247 @@
+@import "nav.css";
+@import "footer.css";
+
+/* <-------------------------------------- GENERAL --------------------------------------> */
+
+html,body{
+    height: 100%;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/* <-------------------------------------- FIRSTPART --------------------------------------> */
+
+.spatiu{
+	height: 10vh;
+	width: 100%;
+}
+
+.firstpart{
+	height: 80vh;
+	width: 100%;
+	display: flex;
+}
+
+.firstpartpoze{
+	margin-left: 5%;
+	height: 70vh;
+	width: 55%;
+	background-image: linear-gradient(rgba(247, 183, 79,0.55),rgba(247, 183, 79,0.55)),url('../img/imagine-spate.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	z-index: 98;
+}
+
+.firstparttext{
+	background-color: #f9f7f6;
+	height: 70vh;
+	width: 40%;
+	float: left;
+	display: grid;
+    align-content: center;
+    justify-items: start;
+	z-index: 2;
+}
+
+.img1{
+	margin-top: 10vh;
+	margin-left: 20%;
+	width: 60%;
+	height: 50vh;
+}
+
+.img2{
+	margin-top: -25vh;
+	margin-left: 50%;
+	width: 60%;
+	height: 30vh;
+	z-index: 99;
+}
+
+.firstpart h1{
+	margin-left: 20%;
+	text-align: left;
+	color: #c69963;
+}
+
+.firstpart h2{
+	margin-left: 20%;
+	text-align: left;
+	color: #54483A;
+	margin-top: 20px;
+}
+
+.firstpart h3{
+	font-style: italic;
+	margin-right: 5%;
+	text-indent: 40px;
+	margin-left: 20%;
+	text-align: left;
+	margin-top: 30px;
+	color: #6D5D4B;
+}
+
+	  .btn {
+		  margin-top: 10px;
+  background-color: #c69963;
+  color: #fff;
+  border: none;
+  border-radius: 0;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 15px;
+  text-transform: uppercase;
+  padding: 7px 10px;
+  cursor: pointer;
+  transition: all .2s; }
+  
+  .firstpart a{
+	  margin-left: 30%;
+  }
+
+.test{
+	height: 300vh;
+}
+
+
+/* <-------------------------------------- SLIDER --------------------------------------> */
+
+.slider {
+    position: relative;
+    overflow: hidden;
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+}  
+
+.slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    opacity: 0;
+    transition: opacity 0.4s ease-in-out;
+    overflow: hidden;
+}
+  
+.slide.current {
+    opacity: 1;
+    background-size: auto;
+    background-attachment: fixed;
+    background-repeat: repeat;
+    position: relative;
+    overflow: hidden;
+}
+
+
+.buttons button#next {
+    position: absolute;
+    right: 15px;
+    margin-top: -52vh;
+}
+  
+.buttons button#prev {
+    position: absolute;
+    left: 15px;
+    margin-top: -52vh;
+}
+  
+.buttons button {
+    border: 2px solid #fff;
+    background-color: transparent;
+    color: #fff;
+    cursor: pointer;
+    padding: 13px 15px;
+    border-radius: 50%;
+    outline: none;
+    z-index: 4;}
+
+.buttons button i{
+      padding-top: 3px;}
+  
+.buttons button:hover {
+    background-color: #fff;
+    color: #333;}
+
+  
+.logocentrudiv{
+    height: 30vh;
+    width: 100%;
+    background: rgba(0,0,0,0.35);
+    margin-top: 35vh;
+}
+
+.slider img{
+    height: 25vh;
+    width: 35%;
+}
+  
+  /* Background Images */
+   
+.slide:first-child {
+      background: url('../img/image40.jpg') no-repeat
+     center/cover;
+	 }
+.slide:nth-child(2) {
+      background: url('../img/image41.jpg') no-repeat
+        center/cover;
+		}
+.slide:nth-child(3) {
+      background: url('../img/image42.jpg') no-repeat
+        center/cover;
+		}
+        
+        
+ 
+
+
+    /* <-------------------------------------- RESPONSIVE --------------------------------------> */
+    
+    @media screen and (max-width: 668px){
+        .firstpart h1{
+            font-size: 1.6em;
+        }
+        
+        .firstpart h2{
+            font-size: 1.2em;
+        }
+        
+        .firstpart h3{
+            font-size: 0.9em;
+        }
+    }
+
+    @media screen and (max-width: 400px){
+        .firstpart{
+            height: auto;
+            display: block;
+        }
+        .firstpartpoze{
+            width: 100%;
+            height: 100vh;
+            margin-left: 0;
+            display: none;
+        }
+        .img2{
+            display: none;
+        }
+
+        .firstparttext{
+            width: 100%;
+            height: 100vh;
+            float:left;
+        }
+        .logocentrudiv img{
+            width: 60%;
+        }
+    }
+    
+    @media screen and (max-width: 250px){
+        .firstpartpoze{
+            display: none;
+        }
+    }
